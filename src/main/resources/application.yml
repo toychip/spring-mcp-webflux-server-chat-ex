@@ -1,0 +1,13 @@
+spring:
+  ai:
+    mcp:
+      server:
+        name: author-tools-server
+        version: 1.0.0
+        type: ASYNC
+        sse-message-endpoint: /mcp/messages
+        stdio: false
+
+server:
+  address: 127.0.0.1
+  port: 8088
