@@ -2,12 +2,17 @@ spring:
   ai:
     mcp:
       server:
-        name: author-tools-server
+        name: author-tool-server
         version: 1.0.0
         type: ASYNC
         sse-message-endpoint: /mcp/messages
         stdio: false
 
 server:
-  address: 127.0.0.1
   port: 8088
+
+logging:
+  level:
+    org:
+      springframework:
+        ai: DEBUG
